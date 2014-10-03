@@ -3,5 +3,6 @@
 #this is a script
 #this is a comment
 
-echo "The number of CPUs is: " 
-grep processor /proc/cpuinfo | wc -l
+cpucnt=$( grep processor /proc/cpuinfo | wc -l )
+printf "The number of CPUs is: %s\n" $cpucnt
+
